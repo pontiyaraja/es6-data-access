@@ -1,5 +1,6 @@
 //import request from './request';
-import * as service from "./employee-service";
+//import * as service from "./employee-service";
+import * as service from "./employee-service-mock";
 // XMLHttpRequest wrapper using callbacks
 // let request = obj => {
 //   return new Promise((resolve, reject) => {
