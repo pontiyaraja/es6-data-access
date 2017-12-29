@@ -1,4 +1,5 @@
-import request from './request';
+//import request from './request';
+import * as service from "./employee-service";
 // XMLHttpRequest wrapper using callbacks
 // let request = obj => {
 //   return new Promise((resolve, reject) => {
@@ -21,15 +22,14 @@ import request from './request';
 //   });
 // }
 
-request({url:"employees.json"})
+//request({url:"employees.json"})
+service.findAll()
     .then(data => {
-        let employees = JSON.parse(data);
+        //let employees = JSON.parse(data);
         let html = "";
-        employees.forEach(employee => {html +=`
+        data.forEach(employee => {html +=`
         <div><img src='${employee.picture}'/><div>${employee.firstName} ${employee.lastName}<p>${employee.phone}</p></div></div>`
       });
         document.getElementById("list").innerHTML = html;
     })
-     .catch(error => {
-        console.log(error);
-    });
+     .catch(error => console.log(error));
