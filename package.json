@@ -1,0 +1,22 @@
+{
+  "name": "es6-data-access",
+  "version": "1.0.0",
+  "description": "Access data by using es6 by mock, internal store and XMLhttp request",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pontiyaraja/es6-data-access.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pontiyaraja/es6-data-access/issues"
+  },
+  "homepage": "https://github.com/pontiyaraja/es6-data-access#readme",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  }
+}
